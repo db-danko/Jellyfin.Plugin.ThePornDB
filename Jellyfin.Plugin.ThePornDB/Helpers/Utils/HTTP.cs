@@ -51,7 +51,7 @@ namespace ThePornDB.Helpers.Utils
             Logger.Error(string.Format(CultureInfo.InvariantCulture, "Requesting {1} \"{0}\"", request.RequestUri.AbsoluteUri, method.Method));
 
             request.Headers.TryAddWithoutValidation("User-Agent", Consts.UserAgent);
-        
+
             var curlCommand = $"curl -X {method.Method} \"{request.RequestUri.AbsoluteUri}\"";
 
             if (param != null)
@@ -107,7 +107,9 @@ namespace ThePornDB.Helpers.Utils
 
             return result;
         }
-        /* public static async Task<HTTPResponse> Request(string url, HttpMethod method, HttpContent param, IDictionary<string, string> headers, IDictionary<string, string> cookies, CancellationToken cancellationToken)
+
+        /*
+        public static async Task<HTTPResponse> Request(string url, HttpMethod method, HttpContent param, IDictionary<string, string> headers, IDictionary<string, string> cookies, CancellationToken cancellationToken)
         {
             var result = new HTTPResponse()
             {
@@ -171,7 +173,8 @@ namespace ThePornDB.Helpers.Utils
             }
 
             return result;
-        }*/
+        }
+        */
 
         public static async Task<HTTPResponse> Request(string url, HttpMethod method, HttpContent param, CancellationToken cancellationToken, IDictionary<string, string> headers = null, IDictionary<string, string> cookies = null)
             => await Request(url, method, param, headers, cookies, cancellationToken).ConfigureAwait(false);
