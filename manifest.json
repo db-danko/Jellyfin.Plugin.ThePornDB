@@ -2,14 +2,14 @@
     {
         "category": "Metadata",
         "guid": "b88714eb-55e9-402f-ba72-4dfaa4b1401f",
-        "name": "ThePornDB",
+        "name": "ThePornDB-Danko",
         "description": "This metadata provider helps fill Jellyfin/Emby with information for your adult videos by pulling from the ThePornDB.",
-        "owner": "DirtyRacer",
+        "owner": "Danko",
         "overview": "Manage Your Adult Videos in Jellyfin/Emby",
         "imageUrl": "https://theporndb.net/images/logo.png",
         "versions": [
             {
-                "checksum": "fc61da3722fb3ca951783a9d32433dba",
+                "checksum": "d5373d7d38994920c13cbed661f4cc10",
                 "changelog": "Fixed missing performer image on init",
                 "targetAbi": "10.9.0.0",
                 "sourceUrl": "https://github.com/db-danko/Jellyfin.Plugin.ThePornDB/releases/download/latest/Jellyfin.Plugin.ThePornDB.zip",
