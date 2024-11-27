@@ -18,7 +18,7 @@ namespace ThePornDB.Helpers.Utils
     {
         static HTTP()
         {
-            Http.Timeout = TimeSpan.FromSeconds(120);
+            Http.Timeout = TimeSpan.FromSeconds(30);
         }
 
         private static CookieContainer CookieContainer { get; } = new CookieContainer();
