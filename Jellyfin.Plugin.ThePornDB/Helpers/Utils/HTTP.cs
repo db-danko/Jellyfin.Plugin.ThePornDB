@@ -30,7 +30,7 @@ namespace ThePornDB.Helpers.Utils
 
         private static IDictionary<HttpStatusCode, TimeSpan> CacheExpirationPerHttpResponseCode { get; } = CacheExpirationProvider.CreateSimple(TimeSpan.FromSeconds(60), TimeSpan.FromSeconds(10), TimeSpan.FromSeconds(5));
 
-        private static RateLimitCachingHandler CacheHandler { get; } = new RateLimitCachingHandler(HttpHandler, CacheExpirationPerHttpResponseCode, TimeLimiter.GetFromMaxCountByInterval(300, TimeSpan.FromSeconds(60)));
+        private static RateLimitCachingHandler CacheHandler { get; } = new RateLimitCachingHandler(HttpHandler, CacheExpirationPerHttpResponseCode, TimeLimiter.GetFromMaxCountByInterval(120, TimeSpan.FromSeconds(60)));
 
         private static HttpClient Http { get; } = new HttpClient(CacheHandler);
 
