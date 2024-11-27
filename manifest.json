@@ -9,7 +9,7 @@
         "imageUrl": "https://theporndb.net/images/logo.png",
         "versions": [
             {
-                "checksum": "55b6dd3634c10305c018ca7b51466e6b",
+                "checksum": "c6109a218a892891e7a36d7ebc8be4e5",
                 "changelog": "Fixed missing performer image on init",
                 "targetAbi": "10.9.0.0",
                 "sourceUrl": "https://github.com/db-danko/Jellyfin.Plugin.ThePornDB/releases/download/latest/Jellyfin.Plugin.ThePornDB.zip",
